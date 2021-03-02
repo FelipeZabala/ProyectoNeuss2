@@ -10,11 +10,11 @@ const rutas: Routes = [
     path: '',
     component: HomeComponent,
     children: [
-      {path: 'listado', component: ListaPlatillosComponent},
+      {path: 'listaPlatillos', component: ListaPlatillosComponent},
       {path: 'agregar', component: AgregarPlatilloComponent},
       {path: 'editar/:id', component: AgregarPlatilloComponent},
       {path: ':id', component: PlatilloComponent},
-      {path: '**', redirectTo: 'listado'}
+      {path: '**', redirectTo: 'listaPlatillos'}
     ]
   }
 ];
