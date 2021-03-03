@@ -3,6 +3,6 @@ export interface Platillo{
     Description:     string;
     Price:           number;
     Stock:           number;
-    Img?:        string;
+    Img:        string;
     idCourse: number;
 }

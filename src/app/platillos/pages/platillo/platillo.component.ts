@@ -13,7 +13,7 @@ export class PlatilloComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params
-      .subscribe( ({ id }) => console.log( id ) );
+      .subscribe( ({ idCourse }) => console.log( idCourse ) );
   }
 
 }

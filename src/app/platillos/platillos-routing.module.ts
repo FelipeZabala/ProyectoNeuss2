@@ -12,8 +12,8 @@ const rutas: Routes = [
     children: [
       {path: 'listaPlatillos', component: ListaPlatillosComponent},
       {path: 'agregar', component: AgregarPlatilloComponent},
-      {path: 'editar/:id', component: AgregarPlatilloComponent},
-      {path: ':id', component: PlatilloComponent},
+      {path: 'editar/:idCourse', component: AgregarPlatilloComponent},
+      {path: ':idCourse', component: PlatilloComponent},
       {path: '**', redirectTo: 'listaPlatillos'}
     ]
   }

@@ -8,7 +8,7 @@ import { PlatilloComponent } from './pages/platillo/platillo.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListaPlatillosComponent } from './pages/lista-platillos/lista-platillos.component';
 import { PlatilloTarjetaComponent } from './components/platillo-tarjeta/platillo-tarjeta.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,6 +19,7 @@ import { PlatilloTarjetaComponent } from './components/platillo-tarjeta/platillo
     FlexLayoutModule,
     MaterialModule,
     PlatillosRoutingModule,
+    FormsModule
     
 
   ]
