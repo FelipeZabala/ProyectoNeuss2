@@ -4,7 +4,7 @@
         <mat-card-subtitle>{{platillo.Price}}</mat-card-subtitle>
     </mat-card-header>
 
-    <img mat-card-image src={{platillo.Img}}>
+    <img mat-card-image [src]="platillo | imagen">
 
     <mat-card-content>
         <h3>{{platillo.Description}}</h3>
@@ -24,7 +24,14 @@
                 [routerLink]="['/platillos', platillo.idCourse]">
             Eliminar
         </button>
+        <!--<button mat-button 
+                color="warn"
+                [routerLink]="['/platillos', platillo.idCourse]">
+            Más Info
+        </button> -->
 
     </mat-card-actions>
 
 </mat-card>
+
+

@@ -9,11 +9,12 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListaPlatillosComponent } from './pages/lista-platillos/lista-platillos.component';
 import { PlatilloTarjetaComponent } from './components/platillo-tarjeta/platillo-tarjeta.component';
 import { FormsModule } from '@angular/forms';
+import { ImagenPipe } from './pipes/imagen.pipe';
 
 
 
 @NgModule({
-  declarations: [AgregarPlatilloComponent, PlatilloComponent, HomeComponent, ListaPlatillosComponent, PlatilloTarjetaComponent],
+  declarations: [AgregarPlatilloComponent, PlatilloComponent, HomeComponent, ListaPlatillosComponent, PlatilloTarjetaComponent, ImagenPipe],
   imports: [
     CommonModule,
     FlexLayoutModule,
