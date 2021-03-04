@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth/guards/auth.guard';
 
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
 
@@ -10,7 +11,9 @@ const routes: Routes = [
   },
   {
     path: 'platillos',
-    loadChildren: () => import('./platillos/platillos.module').then( m => m.PlatillosModule )
+    loadChildren: () => import('./platillos/platillos.module').then( m => m.PlatillosModule ),
+    canLoad: [ AuthGuard ],
+    canActivate: [ AuthGuard ]
   },
   {
     path: '404',
