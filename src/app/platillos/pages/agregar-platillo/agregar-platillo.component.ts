@@ -70,4 +70,16 @@ export class AgregarPlatilloComponent implements OnInit {
 
   }
 
+
+  borrarPlatillo(){
+
+    this.platillosService.borrarPlatillo( this.platillo.idCourse! )
+      .subscribe( resp => {
+        
+        this.router.navigate(['/platillos/listaPlatillos']);
+        
+      });
+
+  }
+
 }

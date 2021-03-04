@@ -27,5 +27,8 @@ export class PlatillosService {
   actualizarPlatillo( platillo: Platillo ):Observable<Platillo> {
     return this.http.put<Platillo>(`http://localhost:3050/course/${ platillo.idCourse }`, platillo );
   }
+  borrarPlatillo( idCourse:number ):Observable<any> {
+    return this.http.delete<any>(`http://localhost:3050/course/${ idCourse }` );
+  }
 
 }
